@@ -1,0 +1,334 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.in-screen {
+    width: 1200px;
+    margin: auto;
+}
+.full-screen {
+    width: 100%;
+}
+.navbar {
+    min-height: 70px;
+    width: 97%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #fff;
+}
+li {
+    list-style: none;
+}
+li a {
+    color: black;
+    text-decoration: none;
+}
+.navbar .white {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+.navbar img {
+    width: 150px;
+    vertical-align: middle;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 33%
+}
+header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+/* header .intro p {
+    font-size: 20px;
+} */
+.cat-white {
+    width: 220px;
+    padding: 3px;
+}
+.pin {
+    background-color: #c86b85;
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+}
+section {
+    padding: 50px 0px 50px 0px;
+
+}
+section h3 {
+    font-size: 30px;
+}
+section h3::after {
+    content:"";
+    border-bottom: 5px solid #c86b85;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#aboutus,
+#product,
+#review {
+    text-align: center;
+}
+section p.title {
+    font-style: italic;
+    font-size: 20px;
+    color: #ababab;
+}
+section .content p {
+    font-style: normal;
+}
+nav.white {
+    background-color: #fff;
+}
+section.bg {
+    background-color: #f6f6f6;
+}
+.service,
+.produk,
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.service h6,
+.produk h6 {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.service img {
+    width: 50px;
+}
+.service div,
+.produk div {
+    text-align: center;
+    width: 26%;
+    padding: 20px;
+}
+section#galery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+section#galery div {
+    padding: 10px;
+}
+section#galery div img {
+    height: 150px;
+    border-radius: 5px;
+}
+section#galery div img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+section.quote {
+    background:url('asset/bg/bg5.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+}
+section.quote .in-screen p {
+    display: inline;
+    font-size: 20px;
+    font-style: italic;
+    background: url('asset/quote-icon.png') no-repeat;
+    padding: 40px;
+}
+.produk img{
+    width: 100%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+}
+.review .area {
+    width: 80%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+.review div.area div {
+    width: 60%;
+}
+.review .area .gambar {
+    border-radius: 5px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.review .area .text article {
+    padding: 10px;
+}
+.review .area .text article h4 {
+    margin: 0px;
+}
+.review .area .text article a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.review .area .text article p{
+    font-size: 0.8em;
+} 
+.review .area .text article a:hover {
+    color: #ccc;
+}
+.profil {
+    width: 70px;
+    border-radius: 90%;
+}
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+}
+footer .in-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .in-screen div {
+    width: 20%;
+}
+footer .in-screen div li {
+    list-style-type: none;
+}
+footer .in-screen div li:hover {
+    color: #ccc;
+}
+footer .in-screen h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .in-screen .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+}
+@media screen and (max-width:991.98px){
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        z-index: 100;
+        position: fixed;
+        left: -120%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .in-screen {
+        width: 90%;
+    }
+
+}
+  
